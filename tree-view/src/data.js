@@ -1,0 +1,51 @@
+export const menus = [{
+    label: "Home",
+    to: '/'
+},
+{
+    label: "profile",
+    to: '/profile',
+    children: [
+        {
+            label: "Details",
+            to: "details",
+            children: [
+                {
+                    label: "Location",
+                    to: "location",
+                },
+            ],
+        },
+    ],
+},
+{
+    label: "Setting",
+    to: '/setting',
+    children: [
+        {
+            label: "Account",
+            to: 'account'
+
+        },
+        {
+            label:"Security",
+            to:"/security",
+
+            children:[
+                {
+                    label:"Login",
+                    to:"/login"
+                },
+                {
+                    label:"Register",
+                    to:"/register",
+
+                },
+            ],
+        },
+
+    ],
+}
+
+]
+export default menus
