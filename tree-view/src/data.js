@@ -40,7 +40,13 @@ export const menus = [{
             children:[
                 {
                     label:"Login",
-                    to:"/login"
+                    to:"/login",
+                    children:[
+                        {
+                            label:"random data",
+                            to:""
+                        }
+                    ]
                 },
                 {
                     label:"Register",
